@@ -7,7 +7,7 @@ if (UNIX)
     FIND_SPECTROMETER()
     include_directories(${SPECTROMETER_INCLUDE_DIR})
 else()
-    include_directories(${COMMON_HEADERS_DIR})  #comes from the main CMakeLists.txt
+    include_directories(${CMAKE_SOURCE_DIR}/library/headers/ ${COMMON_HEADERS_DIR})  #comes from the main CMakeLists.txt
 endif(UNIX)
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
