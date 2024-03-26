@@ -1,0 +1,3 @@
+add_subdirectory(example_app_c_mt_core)
+#add_subdirectory(example_app_c_wrapper)
+#add_subdirectory(tests)

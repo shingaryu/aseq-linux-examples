@@ -1,0 +1,6 @@
+IF(WIN32)
+    add_subdirectory(windows)
+    #add_subdirectory(example_app_c_wrapper)
+ELSE(WIN32)
+    add_subdirectory(linux)
+ENDIF(WIN32)
